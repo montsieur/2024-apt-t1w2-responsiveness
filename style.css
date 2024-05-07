@@ -3,10 +3,27 @@ body{
     background-color: rgb(30, 142, 234);
 }
 
+.column {
+    width: 100%;
+}
+
 /* Styles for screens 600px wide and larger */
 /* @media screen and (min-width: 600px) */
-@media screen and (min-width > 600px) {
-    body{
+@media screen and (width > 600px) {
+    body {
         background-color: palegreen;
+    }
+
+/* Create three equal columns that float next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+    }
+  
+/* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
