@@ -2,7 +2,9 @@
 body{
     background-color: rgb(30, 142, 234);
 }
-
+footer{
+    text-align: center;
+}
 .column {
     width: 100%;
 }
